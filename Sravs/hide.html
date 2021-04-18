@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #ab {
+                column-count: 3;
+            }
+            </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+           <script>
+                $(document).ready(function() {
+                    $(".btn1").click(function() {
+                        $("p").hide()
+                    });
+                    $(".btn2").click(function() {
+                        $("p").show()
+                    });
+                });
+                $(document).ready(function() {
+                    $(".btn3").click(function() {
+                        $("p").fadeOut()
+                    });
+                    $(".btn4").click(function() {
+                        $("p").fadeIn()
+                    });
+                    $(".btn5").click(function() {
+                        $("p").animate()
+                    });
+                });
+        </script>
+        </head>
+        <body>
+
+            <div style="text-align: center;">
+                <h1>JQuery Events</h1>
+               </div>
+              <div id="ab">
+            <p>
+                <img src="hanuma.jpg">
+            </p>
+            <p>
+                <img src="hanuma.jpg">
+            </p>
+            <p>
+                <img src="hanuma.jpg">
+            </p>
+        </div>
+            <button class="btn1">hide</button>
+            <button class="btn2">show</button>
+            <button class="btn3">fadeOut</button>
+            <button class="btn4">fadeIn</button>
+            <button class="btn5">animate</button>
+    </body>
+</html>

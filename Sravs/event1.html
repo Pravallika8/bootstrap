@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <div>
+            <input type="text" id="demo" onkeydown="keydownFunction()">
+        </div>
+        <br>
+        <div>
+            <img src="tajmahal.jpg" onload="loadImage()" width="100" height="100">
+        </div>  
+       <p id="abc">Click me.</p>
+
+<script>
+  document.getElementById("abc").addEventListener("mouseup", mouseUp);
+function mouseUp() {
+  document.getElementById("abc").innerHTML = "today is sunday.";
+}
+function keydownFunction() {
+  document.getElementById("demo").style.backgroundColor = "yellow";
+}
+function loadImage() {
+              alert("Image is loaded");
+            }
+            
+</script>
+           
+        </body>
+    </head>
+</html>

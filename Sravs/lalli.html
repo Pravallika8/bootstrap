@@ -1,0 +1,48 @@
+<html>
+    <head> </head>
+    <body>
+        <fieldset style="width:280px">
+            <legend>Calculator Demo Using Arrow Function:</legend>
+                          
+                  Number1:<input type="text" id="sr" /><br><br>
+                  Number2:<input type="text" id="vs" /><br><br>
+                  <button onclick="Operation()">add</button>
+                  <button onclick="operation()">sub</button>
+                  <button onclick="operation()">mul</button>
+                  <button onclick="operation()">div</button>
+                       
+                  </fieldset>   
+          <script>
+              function Operation(operand) 
+{ 
+                                
+
+        var a = parseInt(document.getElementById('sr').value);
+        var b = parseInt(document.getElementById('vs').value);     
+        var a1 = parseInt(document.getElementById('sr').value);
+        var b1 = parseInt(document.getElementById('vs').value);     
+        var a2 = parseInt(document.getElementById('sr').value);
+        var b2 = parseInt(document.getElementById('vs').value);     
+        var a3 = parseInt(document.getElementById('sr').value);
+        var b3 = parseInt(document.getElementById('vs').value);     
+        window.alert(a+b);               
+        window.alert(a1-b1);  
+        window.alert(a2*b2);  
+        window.alert(a3/b3);               
+        switch(operand)
+        {
+
+case 1 :      result = ( (x, y) => {  return x + y; } )( a,b);break;
+case 2 :      result = ( (x, y) => {  return x - y; } )( a1,b1 );break;
+case 3 :      result = ( (x, y) => {  return x * y; } )(a2,b2 );break;
+case 4 :      result = ( (x, y) => {  return x / y; } )( a3,b3 );break;
+        }
+                                
+  window.alert(result);
+  console.log(result);
+}
+
+          </script>          
+   
+    </body>
+</html>

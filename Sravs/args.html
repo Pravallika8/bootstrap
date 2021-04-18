@@ -1,0 +1,65 @@
+<html>
+    <head></head>
+    <body>
+
+        <script>
+function add() {
+    var a=document.getElementById('first no').value;
+    var b=document.getElementById('second no').value;
+    var c=parseInt(a)+parseInt(b);
+    console.log(c);
+    window.alert(c);
+}
+
+function sub() {
+    var a1=document.getElementById('1 no').value;
+    var b1=document.getElementById('2 no').value;
+    var c1=parseInt(a1)-parseInt(b1);
+    console.log(c1);
+    window.alert(c1);
+}
+function mul() {
+    var a2=document.getElementById('k1 no').value;
+    var b2=document.getElementById('k2 no').value;
+    var c2=parseInt(a2)*parseInt(b2);
+    console.log(c2);
+    window.alert(c2);
+}
+function div() {
+    var a3=document.getElementById('s1 no').value;
+    var b3=document.getElementById('s2 no').value;
+    var c3=parseInt(a3)/parseInt(b3);
+    console.log(c3);
+    window.alert(c3);
+}
+</script>
+<div>
+<label>first no</label>
+ <input type="number"id="first no">
+<label>second no</label>
+<input type="number"id="second no">
+<button onclick="add()">click</button>
+</div>
+<div>
+<label>1 no</label>
+<input type="number"id="1 no">
+ <label>2 no</label>
+<input type="number"id="2 no">
+ <button onclick="sub()">click</button>
+</div>
+<div>
+ <label>k1 no</label>
+<input type="number"id="k1 no">
+ <label>k2 no</label>
+ <input type="number"id="k2 no">
+ <button onclick="mul()">click</button>
+ <div>
+</div>
+ <label>s1 no</label>
+<input type="number"id="s1 no">
+<label>s2 no</label>
+<input type="number"id="s2 no">
+<button onclick="div()">click</button>
+</div>       
+</body>
+</html>

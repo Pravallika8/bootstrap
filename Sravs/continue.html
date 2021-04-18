@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2> Loop controls</h2>
+<p id="ab"></p>
+<script>
+var text = "";
+var i;
+for (i = 0; i < 10; i++) {
+  if (i === 6) { 
+      continue; 
+    }
+    text += + i + "<br>";
+}
+document.getElementById("ab").innerHTML = text;
+console.log(text);
+window.alert(text);
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div style="text-align: center;">
+<h2>Loop controls</h2>
+</div>
+<p id="ab"></p>
+<style>
+#ab{
+    background-color: rgb(245, 84, 21);
+}
+</style>
+<script>
+var text = "";
+var i;
+for (i = 0; i < 10; i++) {
+  if (i === 3) { 
+      break; 
+    }
+    text += + i + "<br>";
+}
+document.getElementById("ab").innerHTML = text;
+</script>
+
+</script>
+</body>
+</html>

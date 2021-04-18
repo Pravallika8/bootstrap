@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<button id="stop">Stop sliding</button>
+
+<div id="flip">click to show my details</div>
+
+<div id="panel"> I am sravanthi.<br>
+    <div style="text-align: center;">
+        <img width="200" height="200" src="hanuma.jpg">
+        </div>
+    I am from kadapa<br>
+    I did my B.Tech in ECE at Gates institute of technology.<br>
+    now, i am doing the course of full stack at ISM Institute,Banglore.<br>
+Technologies I know:Core Java<br>
+                    HTML<br>
+                     CSS<br>
+                     Javascript<br>
+                     JQuery.
+</div>
+
+</body>
+</html>

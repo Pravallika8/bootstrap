@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $('#btn1').on("click",function() {
+                        $('#sr').fadeIn();
+                    });
+                   
+                    $('#btn2').on("click",function() {
+                        $('#ef').hide();
+                        
+                    });
+                   
+                    $('#btn3').on("click",function() {
+                        $('#pq').animate();
+                    });
+                    });
+            </script>
+            </head>  
+            <body>
+                <img id="sr" width="400" height="400" src="hanuma.jpg">
+                <button type="button" id="btn1">click fade</button>
+                <img id="ef" width="400" height="400" src="milk1.jpg">
+                <button type="button" id="btn2">hide image</button>
+                <img id="pq" width="400" height="400" src="calci.png">
+                <button type="button" id="btn3">animate</button>
+             </body>   
+</html>
